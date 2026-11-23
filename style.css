@@ -1,4 +1,4 @@
-:root{--vert:#06392f;--menthe:#e4ffc2;--blanc:#ffffff}
+:root{--vert:#06392f;--framboise:#81083b;--menthe:#e4ffc2;--blanc:#ffffff}
 *{box-sizing:border-box;border-radius:0}
 html{scroll-behavior:smooth}
 body{margin:0;font:18px/1.7 'Playfair Display',Georgia,serif;color:var(--vert);background:var(--blanc)}
@@ -19,7 +19,7 @@ header .wrap{display:flex;justify-content:space-between;align-items:center;min-h
 .logo{font-weight:900;font-size:1.6rem;text-decoration:none}
 nav ul{list-style:none;margin:0;padding:0;display:flex;gap:2rem}
 nav a{text-decoration:none;font-weight:700}
-nav a:hover,nav a[aria-current]{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:6px;text-decoration-color:var(--vert)}
+nav a:hover,nav a[aria-current]{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:6px;text-decoration-color:var(--framboise)}
 .has-sub{position:relative}
 .sub{display:none;position:absolute;top:100%;left:-1rem;background:var(--vert);padding:1rem;min-width:250px;flex-direction:column;gap:.8rem}
 .sub a{color:var(--menthe)}
@@ -29,8 +29,8 @@ nav a:hover,nav a[aria-current]{text-decoration:underline;text-decoration-thickn
 .hero .wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:3rem;align-items:end;padding-top:4.5rem}
 .hero p{color:var(--blanc);max-width:36ch}
 .hero .ph{min-height:460px}
-.btn{display:inline-block;padding:.8rem 1.4rem;border:2px solid var(--vert);background:var(--vert);color:var(--menthe);font-weight:700;text-decoration:none;margin:0 .6rem .6rem 0}
-.btn:hover{background:var(--menthe);color:var(--vert)}
+.btn{display:inline-block;padding:.8rem 1.4rem;border:2px solid var(--framboise);background:var(--framboise);color:var(--blanc);font-weight:700;text-decoration:none;margin:0 .6rem .6rem 0}
+.btn:hover{background:var(--blanc);color:var(--framboise)}
 .hero .btn{background:var(--menthe);color:var(--vert);border-color:var(--menthe)}
 .hero .btn:hover{background:transparent;color:var(--menthe)}
 .hero .btn.o{background:transparent;color:var(--menthe)}
@@ -74,3 +74,8 @@ footer ul{text-align:left}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .ph{color:var(--vert)}
 .y .ph{background:var(--blanc)}
+h1 em,h2 em{color:var(--framboise)}
+.hero h1 em{color:inherit}
+.meta,.stats b{color:var(--framboise)}
+main a:not(.btn){text-decoration-color:var(--framboise);text-decoration-thickness:2px;text-underline-offset:4px}
+@media(min-width:761px){.sub a:hover{text-decoration-color:var(--menthe)}}
