@@ -74,8 +74,13 @@ footer ul{text-align:left}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .ph{color:var(--vert)}
 .y .ph{background:var(--blanc)}
-h1 em,h2 em{color:var(--framboise)}
-.hero h1 em{color:inherit}
 .meta,.stats b{color:var(--framboise)}
 main a:not(.btn){text-decoration-color:var(--framboise);text-decoration-thickness:2px;text-underline-offset:4px}
 @media(min-width:761px){.sub a:hover{text-decoration-color:var(--menthe)}}
+h1,h2,h3{color:var(--framboise)}
+.y h1,.y h2,.y h3{color:var(--vert)}
+.hero h1{color:var(--menthe)}
+.y .meta,.y .stats b{color:var(--vert)}
+.y a:not(.btn){text-decoration-color:var(--vert)}
+.y .btn{border-color:var(--vert);background:var(--vert);color:var(--menthe)}
+.y .btn:hover{background:var(--blanc);color:var(--vert)}
