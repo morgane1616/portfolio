@@ -1,4 +1,4 @@
-:root{--vert:#06392f;--lime:#a8e878;--menthe:#e4ffc2;--blanc:#ffffff}
+:root{--vert:#06392f;--menthe:#e4ffc2;--blanc:#ffffff}
 *{box-sizing:border-box;border-radius:0}
 html{scroll-behavior:smooth}
 body{margin:0;font:18px/1.7 'Playfair Display',Georgia,serif;color:var(--vert);background:var(--blanc)}
@@ -19,23 +19,23 @@ header .wrap{display:flex;justify-content:space-between;align-items:center;min-h
 .logo{font-weight:900;font-size:1.6rem;text-decoration:none}
 nav ul{list-style:none;margin:0;padding:0;display:flex;gap:2rem}
 nav a{text-decoration:none;font-weight:700}
-nav a:hover,nav a[aria-current]{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:6px;text-decoration-color:var(--lime)}
+nav a:hover,nav a[aria-current]{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:6px;text-decoration-color:var(--vert)}
 .has-sub{position:relative}
 .sub{display:none;position:absolute;top:100%;left:-1rem;background:var(--vert);padding:1rem;min-width:250px;flex-direction:column;gap:.8rem}
-.sub a{color:var(--lime)}
+.sub a{color:var(--menthe)}
 .has-sub:hover .sub,.has-sub:focus-within .sub{display:flex}
 .burger,#nav-toggle{display:none}
-.hero{background:var(--vert);color:var(--lime);padding:0}
+.hero{background:var(--vert);color:var(--menthe);padding:0}
 .hero .wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:3rem;align-items:end;padding-top:4.5rem}
 .hero p{color:var(--blanc);max-width:36ch}
 .hero .ph{min-height:460px}
-.btn{display:inline-block;padding:.8rem 1.4rem;border:2px solid var(--vert);background:var(--vert);color:var(--lime);font-weight:700;text-decoration:none;margin:0 .6rem .6rem 0}
-.btn:hover{background:var(--lime);color:var(--vert)}
-.hero .btn{background:var(--lime);color:var(--vert);border-color:var(--lime)}
-.hero .btn:hover{background:transparent;color:var(--lime)}
-.hero .btn.o{background:transparent;color:var(--lime)}
-.hero .btn.o:hover{background:var(--lime);color:var(--vert)}
-.ph{background:var(--lime);min-height:340px;display:grid;place-items:center;border:2px dashed var(--vert);text-align:center;padding:1rem}
+.btn{display:inline-block;padding:.8rem 1.4rem;border:2px solid var(--vert);background:var(--vert);color:var(--menthe);font-weight:700;text-decoration:none;margin:0 .6rem .6rem 0}
+.btn:hover{background:var(--menthe);color:var(--vert)}
+.hero .btn{background:var(--menthe);color:var(--vert);border-color:var(--menthe)}
+.hero .btn:hover{background:transparent;color:var(--menthe)}
+.hero .btn.o{background:transparent;color:var(--menthe)}
+.hero .btn.o:hover{background:var(--menthe);color:var(--vert)}
+.ph{background:var(--menthe);min-height:340px;display:grid;place-items:center;border:2px dashed var(--vert);text-align:center;padding:1rem}
 .ph::after{content:"Photo à ajouter : " attr(data-img)}
 .ph.v::after{content:"Vidéo à intégrer : " attr(data-img)}
 figure{margin:0}
@@ -51,7 +51,7 @@ figure{margin:0}
 .stats b{display:block;font-size:2.4rem;font-weight:900;line-height:1.1}
 footer{background:var(--vert);color:var(--blanc);padding:3rem 0}
 footer .wrap{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap}
-footer a{color:var(--lime)}
+footer a{color:var(--menthe)}
 footer ul{list-style:none;padding:0;margin:0;text-align:right}
 footer .logo{display:block;margin-bottom:.5rem}
 @media(max-width:760px){
@@ -73,3 +73,4 @@ footer ul{text-align:left}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .ph{color:var(--vert)}
+.y .ph{background:var(--blanc)}
